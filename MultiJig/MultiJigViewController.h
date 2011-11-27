@@ -6,10 +6,15 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface MultiJigViewController : UIViewController {
-    
-}
+#import <UIKit/UIKit.h>
+#import "MultiJigImageView.h"
+
+@interface MultiJigViewController : UIViewController <UIGestureRecognizerDelegate>
+
+-(IBAction)resetPicture:(id)sender;
+
+-(void)panToMatchGesture:(UIPanGestureRecognizer*)gesture;
+-(void)rotateToMatchGesture:(UIRotationGestureRecognizer*)gesture;
 
 @end

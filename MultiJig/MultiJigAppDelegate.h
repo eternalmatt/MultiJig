@@ -10,12 +10,10 @@
 
 @class MultiJigViewController;
 
-@interface MultiJigAppDelegate : NSObject <UIApplicationDelegate> {
+@interface MultiJigAppDelegate : NSObject <UIApplicationDelegate> 
 
-}
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet MultiJigViewController *viewController;
+@property (nonatomic, retain) IBOutlet id viewController;
 
 @end

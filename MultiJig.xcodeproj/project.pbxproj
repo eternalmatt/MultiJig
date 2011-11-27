@@ -22,6 +22,10 @@
 		30950517146B36040049FC42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30950515146B36040049FC42 /* InfoPlist.strings */; };
 		3095051A146B36040049FC42 /* MultiJigTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 30950519146B36040049FC42 /* MultiJigTests.h */; };
 		3095051C146B36040049FC42 /* MultiJigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3095051B146B36040049FC42 /* MultiJigTests.m */; };
+		30950526146B37050049FC42 /* mypeople.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30950525146B37050049FC42 /* mypeople.jpg */; };
+		30950528146B370D0049FC42 /* puppy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30950527146B370D0049FC42 /* puppy.jpg */; };
+		3095052B146B37520049FC42 /* MultiJigImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3095052A146B37520049FC42 /* MultiJigImageView.m */; };
+		30BE7CC6146C32D400360560 /* UIImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BE7CC5146C32D400360560 /* UIImageCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +43,28 @@
 		309504EC146B36040049FC42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		309504EE146B36040049FC42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		309504F0146B36040049FC42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		309504F4146B36040049FC42 /* MultiJig-Info.plist */ = {isa = PBXFileReference; path = "MultiJig-Info.plist"; sourceTree = "<group>"; };
+		309504F4146B36040049FC42 /* MultiJig-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiJig-Info.plist"; sourceTree = "<group>"; };
 		309504F6146B36040049FC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		309504F8146B36040049FC42 /* MultiJig-Prefix.pch */ = {isa = PBXFileReference; path = "MultiJig-Prefix.pch"; sourceTree = "<group>"; };
+		309504F8146B36040049FC42 /* MultiJig-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiJig-Prefix.pch"; sourceTree = "<group>"; };
 		309504F9146B36040049FC42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		309504FB146B36040049FC42 /* MultiJigAppDelegate.h */ = {isa = PBXFileReference; path = MultiJigAppDelegate.h; sourceTree = "<group>"; };
+		309504FB146B36040049FC42 /* MultiJigAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiJigAppDelegate.h; sourceTree = "<group>"; };
 		309504FC146B36040049FC42 /* MultiJigAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiJigAppDelegate.m; sourceTree = "<group>"; };
 		309504FF146B36040049FC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		30950501146B36040049FC42 /* MultiJigViewController.h */ = {isa = PBXFileReference; path = MultiJigViewController.h; sourceTree = "<group>"; };
+		30950501146B36040049FC42 /* MultiJigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiJigViewController.h; sourceTree = "<group>"; };
 		30950502146B36040049FC42 /* MultiJigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiJigViewController.m; sourceTree = "<group>"; };
 		30950505146B36040049FC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MultiJigViewController.xib; sourceTree = "<group>"; };
 		3095050C146B36040049FC42 /* MultiJigTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiJigTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30950514146B36040049FC42 /* MultiJigTests-Info.plist */ = {isa = PBXFileReference; path = "MultiJigTests-Info.plist"; sourceTree = "<group>"; };
+		30950514146B36040049FC42 /* MultiJigTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiJigTests-Info.plist"; sourceTree = "<group>"; };
 		30950516146B36040049FC42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		30950518146B36040049FC42 /* MultiJigTests-Prefix.pch */ = {isa = PBXFileReference; path = "MultiJigTests-Prefix.pch"; sourceTree = "<group>"; };
+		30950518146B36040049FC42 /* MultiJigTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiJigTests-Prefix.pch"; sourceTree = "<group>"; };
 		30950519146B36040049FC42 /* MultiJigTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiJigTests.h; sourceTree = "<group>"; };
 		3095051B146B36040049FC42 /* MultiJigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiJigTests.m; sourceTree = "<group>"; };
+		30950525146B37050049FC42 /* mypeople.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mypeople.jpg; sourceTree = "<group>"; };
+		30950527146B370D0049FC42 /* puppy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puppy.jpg; sourceTree = "<group>"; };
+		30950529146B37520049FC42 /* MultiJigImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiJigImageView.h; sourceTree = "<group>"; };
+		3095052A146B37520049FC42 /* MultiJigImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiJigImageView.m; sourceTree = "<group>"; };
+		30BE7CC4146C32D400360560 /* UIImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCategory.h; sourceTree = "<group>"; };
+		30BE7CC5146C32D400360560 /* UIImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,12 @@
 		309504F3146B36040049FC42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30950529146B37520049FC42 /* MultiJigImageView.h */,
+				3095052A146B37520049FC42 /* MultiJigImageView.m */,
+				30BE7CC4146C32D400360560 /* UIImageCategory.h */,
+				30BE7CC5146C32D400360560 /* UIImageCategory.m */,
+				30950527146B370D0049FC42 /* puppy.jpg */,
+				30950525146B37050049FC42 /* mypeople.jpg */,
 				309504F4146B36040049FC42 /* MultiJig-Info.plist */,
 				309504F5146B36040049FC42 /* InfoPlist.strings */,
 				309504F8146B36040049FC42 /* MultiJig-Prefix.pch */,
@@ -199,6 +215,9 @@
 /* Begin PBXProject section */
 		309504DF146B36040049FC42 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 309504E2146B36040049FC42 /* Build configuration list for PBXProject "MultiJig" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -225,6 +244,8 @@
 				309504F7146B36040049FC42 /* InfoPlist.strings in Resources */,
 				30950500146B36040049FC42 /* MainWindow.xib in Resources */,
 				30950506146B36040049FC42 /* MultiJigViewController.xib in Resources */,
+				30950526146B37050049FC42 /* mypeople.jpg in Resources */,
+				30950528146B370D0049FC42 /* puppy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +284,8 @@
 				309504FA146B36040049FC42 /* main.m in Sources */,
 				309504FD146B36040049FC42 /* MultiJigAppDelegate.m in Sources */,
 				30950503146B36040049FC42 /* MultiJigViewController.m in Sources */,
+				3095052B146B37520049FC42 /* MultiJigImageView.m in Sources */,
+				30BE7CC6146C32D400360560 /* UIImageCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +385,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiJig/MultiJig-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MultiJig/MultiJig-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -375,6 +399,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiJig/MultiJig-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MultiJig/MultiJig-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
@@ -394,6 +419,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiJigTests/MultiJigTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MultiJigTests/MultiJigTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -417,6 +443,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiJigTests/MultiJigTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MultiJigTests/MultiJigTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -447,6 +474,7 @@
 				30950521146B36040049FC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30950522146B36040049FC42 /* Build configuration list for PBXNativeTarget "MultiJigTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +483,7 @@
 				30950524146B36040049FC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

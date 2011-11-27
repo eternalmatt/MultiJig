@@ -11,17 +11,35 @@
 #import "MultiJigViewController.h"
 
 @implementation MultiJigAppDelegate
-
-
-@synthesize window=_window;
-
-@synthesize viewController=_viewController;
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    //to start a menu screen we'll need to do something like this (not 100% sure)
+    /*
      
-    self.window.rootViewController = self.viewController;
+     UIViewController controller = [[UIViewController alloc] initWithNibName:@"Something.xib" bundle:nil];
+     
+     then either create navcon with initWithRootViewControler....or something similar to recognize it
+     then self.window.rootViewController = navcon;
+     
+     
+     in the Something.h and Something.m is where we'd hook up buttons to methods that do stuff.
+     like, for instance, push another view controller (like our main game MultiJigViewController).
+     you can do that (inside Something.m) by [self.navigationController pushblahblahblah:blarg]
+     
+     */
+     
+    self.viewController = [[[MultiJigViewController alloc] init] autorelease];
+    UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:self.viewController];    
+    self.window.rootViewController = [navcon autorelease];
+    
+
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -69,6 +87,8 @@
 {
     [_window release];
     [_viewController release];
+    _window = nil;
+    _viewController = nil;
     [super dealloc];
 }
 
