@@ -52,30 +52,31 @@
 +(UIImage*)imageByCroppingImage:(UIImage*)image inRect:(CGRect)rect
 {
     CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
-    
-    UIImage *result = [UIImage imageWithCGImage:imageRef scale:image.scale orientation:image.imageOrientation];
+    UIImage *result             = [UIImage imageWithCGImage:imageRef scale:image.scale orientation:image.imageOrientation];
     CGImageRelease(imageRef);
-    
     
     return result;
 }
 
 //written by Matt Senn
--(NSMutableArray*)getRectangularPuzzlePiecesWithRows:(NSUInteger)row andColumns:(NSUInteger)col
+-(NSMutableArray*)getRectangularPuzzlePiecesWithRows:(NSUInteger)rows andColumns:(NSUInteger)cols
 {
-    const CGFloat rowDiff = self.size.width  / ((CGFloat)row);
-    const CGFloat colDiff = self.size.height / ((CGFloat)col);
-    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:row*col];
+    const CGFloat width = self.size.width  / ((CGFloat)cols);
+    const CGFloat height = self.size.height / ((CGFloat)rows);
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:rows];
     
-    
-    for(CGFloat i=0; i < self.size.width; i += rowDiff)      
-        for(CGFloat j=0; j < self.size.height; j += colDiff)      
+    for(CGFloat i=0; i < self.size.width - 0.01; i += width)
+    {
+        NSMutableArray *someRow = [NSMutableArray arrayWithCapacity:cols];
+        for(CGFloat j=0; j < self.size.height - 0.01; j += height)      
         {
-            UIImage *cropped = [UIImage imageByCroppingImage:self inRect:CGRectMake(i, j, rowDiff, colDiff)];
-            [array addObject:cropped];
+            UIImage *cropped = [UIImage imageByCroppingImage:self inRect:CGRectMake(i, j, width, height)];
+            [someRow addObject:cropped];
         }
+        [array addObject:someRow];
+    }
     
-    return [array autorelease];
+    return array;
 }
 
 @end

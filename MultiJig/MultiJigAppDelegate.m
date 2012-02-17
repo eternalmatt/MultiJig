@@ -7,6 +7,7 @@
 //
 
 #import "MultiJigAppDelegate.h"
+#import "Menu.h"
 
 #import "MultiJigViewController.h"
 
@@ -34,11 +35,13 @@
      
      */
      
-    self.viewController = [[[MultiJigViewController alloc] init] autorelease];
-    UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:self.viewController];    
+    self.viewController = [[[Menu alloc] init] autorelease];
+   
+    UINavigationController *navcon = [[UINavigationController alloc] init];
+    
     self.window.rootViewController = [navcon autorelease];
     
-
+    [navcon pushViewController:self.viewController animated:YES];
     
     [self.window makeKeyAndVisible];
     return YES;
