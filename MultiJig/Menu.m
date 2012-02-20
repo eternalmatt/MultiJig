@@ -12,7 +12,6 @@
 #pragma mark - Property Synthesization
 @synthesize mainGameController = _mainGameController;
 @synthesize popcorn = _popcorn;
-@synthesize gameTitle = _gameTitle;
 @synthesize selectedImage = _selectedImage;
 @synthesize segmentedContent = _segmentedContent;
 @synthesize difficultyLabelRows, difficultyLabelColumns;
@@ -122,7 +121,6 @@
     [super viewDidUnload];
     [_mainGameController release];
     [_popcorn release];
-    [_gameTitle release];
     [_selectedImage release];
     [_segmentedContent release];
     [difficultyLabelRows release];

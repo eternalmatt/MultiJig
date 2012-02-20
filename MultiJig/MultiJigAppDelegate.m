@@ -37,11 +37,8 @@
      
     self.viewController = [[[Menu alloc] init] autorelease];
    
-    UINavigationController *navcon = [[UINavigationController alloc] init];
-    
+    UINavigationController *navcon = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window.rootViewController = [navcon autorelease];
-    
-    [navcon pushViewController:self.viewController animated:YES];
     
     [self.window makeKeyAndVisible];
     return YES;

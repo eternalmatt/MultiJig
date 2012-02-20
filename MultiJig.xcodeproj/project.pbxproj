@@ -265,7 +265,7 @@
 		309504DF146B36040049FC42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 309504E2146B36040049FC42 /* Build configuration list for PBXProject "MultiJig" */;
 			compatibilityVersion = "Xcode 3.2";

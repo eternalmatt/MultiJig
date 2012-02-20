@@ -30,16 +30,25 @@ MJSettingsDelegate>
 @property (nonatomic) NSUInteger number_of_rows;
 @property (nonatomic) NSUInteger number_of_columns;
 
--(IBAction)resetPicture:(id)sender;
+@end
 
+
+@interface MultiJigViewController (GestureDelegate)
 //these are functions declared from MJGestureDelegate
 -(void)panToMatchGesture:(UIPanGestureRecognizer*)gesture;
 -(void)rotateToMatchGesture:(UIRotationGestureRecognizer*)gesture;
 -(void)tapToMatchGesture:(UITapGestureRecognizer*)gesture;
+@end
 
 
+@interface MultiJigViewController (ModelDelegate)
 //these are things i'm going to implement that are automatically declared from MJModelDelegate
 -(void)combinePiece:(id)one withOther:(id)other;
 -(void)userDidSolvePuzzle;
+@end
 
+
+@interface MultiJigViewController (SettingsDelegate)
+//the only current setting is enableAcceleration
+-(void)enableAcceleration:(BOOL)enable;
 @end

@@ -16,7 +16,6 @@
 
 /*images*/
 @property (nonatomic, retain) IBOutlet UIImageView *selectedImage;
-@property (nonatomic, retain) IBOutlet UIImageView *gameTitle;
 
 /*sliders*/
 @property (nonatomic, retain) IBOutlet UISlider *difficultySliderRows;

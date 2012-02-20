@@ -57,11 +57,11 @@
 @synthesize delegate;
 @synthesize gamePieces = _gamePieces;
 
--(id)init
+-(id)gamePieces
 {
-    if (self = [super init])
-        _gamePieces = [[NSMutableArray alloc] init];
-    return self;
+    if (_gamePieces == nil)
+        _gamePieces = [[NSMutableArray alloc] initWithCapacity:20];
+    return _gamePieces;
 }
 
 -(Piece*)pieceWithReference:(id)reference

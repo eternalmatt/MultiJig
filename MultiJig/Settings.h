@@ -10,6 +10,7 @@
 
 @protocol MJSettingsDelegate <NSObject>
 @required
+
 -(void)enableAcceleration:(BOOL)enable;
 
 @end
@@ -20,4 +21,5 @@
 @property (nonatomic, assign) id<MJSettingsDelegate> delegate;
 
 -(IBAction)valueChanged:(id)sender;
+
 @end

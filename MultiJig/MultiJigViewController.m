@@ -134,24 +134,6 @@
     NSLog(@"ViewController loaded");
 }
 
-#pragma mark - Button Presses
-
--(IBAction)resetPicture:(id)sender
-{
-    [UIView animateWithDuration:3.0 animations:^(void)
-    { 
-        for(MultiJigImageView *view in self.puzzlePieces)
-        {
-            view.transform = CGAffineTransformIdentity;
-            view.previousRotation = CGAffineTransformIdentity;
-            [self.model setGamePiece:view atWorldPosition:view.center];
-            
-            view.selected = NO;
-            [self.model updateWithView:view andSelected:NO];
-        }
-    }];
-}
-
 
 #pragma mark -  Model Delegate methods
 
@@ -405,15 +387,15 @@
 
 -(void)touchesChanged:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    //NSLog(@"%s",__FUNCTION__);
+    NSLog(@"%s",__FUNCTION__);
 
 }-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    //NSLog(@"%s",__FUNCTION__);
+    NSLog(@"%s",__FUNCTION__);
 }
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    //NSLog(@"%s",__FUNCTION__);
+    NSLog(@"%s",__FUNCTION__);
 }
 
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
